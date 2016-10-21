@@ -1,0 +1,143 @@
+$lightblue: #30ceba;
+
+// skills
+@media (min-width: 0) and (max-width: $small) {
+.skills{padding:10px;min-height:auto; @include centerer;}
+.skills:nth-child(1){order:1;}
+.skills:nth-child(2){order:2;}
+.skills:nth-child(3){order:4;}
+.skills:nth-child(4){order:3;}
+.skills:nth-child(5){order:6;}
+.skills:nth-child(6){order:5;}
+.skills:nth-child(7){order:7;}
+.skills:nth-child(8){order:8;}
+//.skills:nth-of-type(even):nth-of-type(-n+4){background:#eee; }
+//.skills:nth-of-type(odd):nth-of-type(n+5){background:#eee;}
+}
+@media (min-width: $small + 1) and (max-width: $medium) {
+.skills{padding:10px;min-height:auto; @include centerer;}
+//.skills:nth-of-type(even):nth-of-type(-n+4){background:#eee; }
+//.skills:nth-of-type(odd):nth-of-type(n+5){background:#eee;}
+}
+@media (min-width: $medium +1) and (max-width: $large) {
+.skills{padding:10px;min-height:auto; @include centerer;}
+//.skills:nth-of-type(even):nth-of-type(-n+4){background:#eee; }
+//.skills:nth-of-type(odd):nth-of-type(n+5){background:#eee;}
+}
+@media (min-width: $large + 1) {
+.skills{padding:10px; @include centerer;}
+.skills:nth-of-type(even):nth-of-type(-n+4){ }
+.skills:nth-of-type(odd):nth-of-type(n+5){}
+.skills:nth-of-type(odd):nth-of-type(-n+4){ }
+.skills:nth-of-type(even):nth-of-type(n+5){}
+.skills-header{background:#ccc; height:60px; width:100%;padding:20px 0 0 0; }
+.skills-content{ background:#f9f9f9; height:800px; width:100%; border-radius:5px; }
+}
+.skills-wrap{width:100%; height:58%; background-color: #E44F26; display:flex; flex-direction:row;  align-items:center;  flex: initial;
+  width: 100px;
+}
+.skills-header-wrap{display:flex; width:auto; @include centerer; }
+.fullcontainer:nth-child(2) > .container > .skills-header-wrap{ margin:30px auto 0 auto;}
+.fullcontainer:nth-child(4) > .container > .skills-header-wrap{ margin:90px auto 0 auto;}
+
+//skills bars
+
+.initial{flex:initial; display:flex; color:#fff;margin:0; @include centerer; height:40px; width:150px; background:#ff00ff;}
+.skills-bar-wrap{
+  position:relative; 
+  display:flex; 
+  flex:1;
+  height:4px;
+  background:#ccc;}
+.skills-bar{
+  position:relative; 
+  display:flex; 
+  flex:1;
+  height:4px;
+  background:#DA6270}
+
+
+#skill-html {
+    width: 80%;
+    animation: Animate-HTML 5s;
+    @include skills-bar;
+    background-color: #F1662A;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%;}
+}
+
+#skill-css {
+    width: 80%;
+    animation: Animate-CSS 5s;
+    @include skills-bar;
+    background-color: #33A9DC;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%;}
+}
+
+#skill-js {
+    width: 20%;
+    animation: Animate-JS 5s;
+    @include skills-bar;
+    background-color: #FFDE25;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}
+
+#skill-php {
+    width: 20%;
+    animation: Animate-PHP 5s;
+    @include skills-bar;
+    background-color: #8892BF;
+}
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}
+
+#skill-sql {
+    animation: Animate-SQL 5s;
+    width: 40%;
+    @include skills-bar;
+    background-color: #00AAEB;
+}
+@keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}
+
+#skill-responsive {
+    animation: Animate-Responsive 5s;
+    width: 100%;
+    @include skills-bar;
+    background-color: #FA6E6D;
+}
+@keyframes Animate-Responsive {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}
+

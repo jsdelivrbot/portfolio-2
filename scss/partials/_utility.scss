@@ -1,0 +1,103 @@
+$small: 767px;
+$medium: 999px;
+$large: 1499px;
+$softtext: #767676;
+$lightblue: #30ceba;
+.white{background:#fff;}
+@mixin centerer { align-items:center;justify-content: center;}
+@mixin skills-bar { height: 4px; }
+
+@mixin small {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $small + 1) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $medium +1) and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: $large + 1) {
+    @content;
+  }
+}
+
+
+
+.btn {
+  width:auto;
+  border:1px solid #16a085;
+  border-radius: 5px;
+  color: #16a085;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.btn:hover {
+  width:auto;
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 
+
+.btn-contact{
+  cursor: pointer;
+  width:100%;
+  border:1px solid #16a085;
+  border-radius: 5px;
+  background:#fff;
+  color: #16a085;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.btn-contact:hover {
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 
+
+/* Footer */
+
+
+.icons{font-size:7rem;}
+.icons-header{font-size:5rem; margin:20px; color:#fff;}
+.icons-build{color:#30ceba}
+.hero-btn {
+  margin-top:140px;
+  width:auto;
+  border:1px solid #fff;
+  border-radius: 5px;
+  color: #16a085;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.hero-btn:hover {
+  width:auto;
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 
+
+.img-full {width: 100%; height:auto; display:block;  }
+.img-cell {width: 25%; height:auto; display:block;  }
+.img-border {width: 100%; border:10px solid #fff; border-radius:5px;height:auto; display:block;  }

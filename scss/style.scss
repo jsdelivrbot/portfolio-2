@@ -1,0 +1,144 @@
+// Modules and Variables
+@import 'partials/utility';
+// Partials
+@import 'partials/normalize';
+@import 'partials/nav';
+@import 'partials/skills';
+@import 'partials/grid';
+@import 'partials/form';
+@import 'partials/projects';
+@import 'partials/modal';
+
+
+
+*, *::after, *::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html { font-size: 62.5%; }
+body { font-size: 1.2em; line-height: 1.8em; font: 400 'Montserrat', sans-serif #282828; 
+ display: flex; min-height: 100vh; flex-direction: column;}
+// Headings
+h1, h2, h3, h4, h5, h6 { margin-top: 0rem; margin-bottom: 0rem;  }
+  h1 { font:700 6rem 'Syncopate', sans-serif;text-align:center; color:#fff; text-transform:uppercase;}
+  h2 { font:400 2.4rem 'Oswald', sans-serif; line-height:23px; text-align:center; text-transform: uppercase; margin:0 0 0 0; padding:0px 0 0 0;letter-spacing: 0.4rem; }
+  h2 span {
+  display: inline-block;
+  position: relative;  
+  margin-bottom:40px;
+}
+h2 span:before,
+h2 span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-top: 1px solid black;
+  bottom: 0;
+  width: 300px;
+  color: #fff;
+  @include small {width:100px;  }
+  @include medium {width:150px;  }
+  @include large {width:200px;  }
+}
+h2 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+h2 span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+h3{ font:700 2rem 'Raleway', sans-serif; line-height:20px; text-transform: uppercase; margin:10px 0 20px 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
+h4 {font:700 1.6rem  'Raleway', sans-serif; line-height:20px; text-transform: uppercase; margin: 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
+h5 {font:700 1.2rem  'Syncopate', sans-serif; line-height:20px; text-transform: uppercase; margin: 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
+p { margin-top: 0; padding:0px;}
+
+/* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a, a:visited {  text-decoration: none;}
+a:hover, a:active {  text-decoration: none; ; }
+
+// Header text
+.header-text{  
+  position:absolute; @include centerer;
+  position:relative; 
+  display:flex; 
+  height:100%;
+  color:#fff;
+  }
+
+/* Tech */
+.tech-icon{ padding:40px;}
+.margin-40{margin-top:40px;}
+
+.tech-text{
+  display:flex;
+  @include centerer;
+  padding:20px;
+  background:#f5f5f5; 
+  height:100px; 
+  color:$softtext;
+  }
+.tech-logo{
+  display:flex;
+  @include centerer; 
+  background:#fff; 
+  height:100px;
+  }
+
+
+
+
+
+.footer{ width:100%; height:50px; background:#000; text-align:center; }
+
+
+
+// Coverr video
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
