@@ -12,7 +12,9 @@ if ($_POST) {
   $stmt = $pdo->prepare('INSERT INTO comments (name, email, message) VALUES (?,?,?)');
   $result = $stmt->execute([$_POST['name'], $_POST['email'], $_POST['message']]);
   if ($result) {
-   echo 'Thank you for contacting me';
+   echo '<div class="grid grid--gutters grid--full gridmd--full gridlg--full gridxl--full">
+				<div class="cell"><div class="contact-thanks">Thank you for contacting me</div></div>
+				</div>';
    
   }else{
     echo ' oooops';
@@ -21,7 +23,7 @@ if ($_POST) {
 }
 ?>
 	<div class="grid grid--gutters grid--full gridmd--1of2 gridlg--1of2 gridxl--1of2">
-				<div class="cell">
+				<div class="cell" data-aos="fade-right">
 					<form id="form" action="#form" method="post">
 						<input type="text" name ="name" id="name" required>
 						<label for="" placeholder="Full Name" alt="Full Name"></label>
@@ -32,8 +34,8 @@ if ($_POST) {
 						<input type="submit" value="Contact Me" id="btn-contact" class="btn-contact"/>
 					</form>
 				</div>
-			<div class="cell">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40959.28061795736!2d14.407594968548896!3d50.08712865780532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPrague%2C+Czech+Republic!5e0!3m2!1sen!2suk!4v1476892995131" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="cell" data-aos="fade-left">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40959.28061795736!2d14.407594968548896!3d50.08712865780532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPrague%2C+Czech+Republic!5e0!3m2!1sen!2suk!4v1476892995131" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 	<!--Form end -->
 </div>

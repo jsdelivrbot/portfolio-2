@@ -52,6 +52,11 @@
 }
 // Full container styles 
 .fullcontainer{position:relative; width:100%; margin:0 auto; background: #eee; }
+.fullcontainer:nth-child(4) {position:relative; height:auto; background:   linear-gradient(
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.9)
+    ),
+url(../images/contact2.jpg); }
 .fullcontainer:nth-child(5) {position:relative; height:auto; background:   linear-gradient(
       rgba(255, 255, 255, 0.95), 
       rgba(255, 255, 255, 0.95)
@@ -59,16 +64,16 @@
 url(../images/arrows.png); }
 
 .fullcontainer:nth-child(6) {position:relative; height:auto; background:   linear-gradient(
-      rgba(184, 196, 204, 0.95), 
-      rgba(184, 196, 204, 0.95)
+      rgba(184, 196, 204, 0.93), 
+      rgba(184, 196, 204, 0.93)
     ),
 url(../images/people.jpg); }
 .fullcontainer:nth-child(7) {position:relative; height:auto; background:   linear-gradient(
-      rgba(255, 255, 229, 0.95), 
-      rgba(255, 255, 229, 0.95)
+      rgba(255, 255, 229, 0.9), 
+      rgba(255, 255, 229, 0.9)
     ),
 url(../images/projects.jpg); }
-.fullcontainer:nth-child(8) {position:relative; background: #fff; color:#000; }
+.fullcontainer:nth-child(8) {position:relative; background: #fff; }
 .fullcontainer-absolute-header{z-index:101;position:absolute;height:100%;width:100%; bottom:0; left:0;margin:0 auto; padding:0 10px 0 10px; }
 .fullcontainer-absolute{z-index:101;position:absolute;height:auto;width:100%; left:0;margin:0 auto; padding:0 10px 0 10px;  }
 .container-absolute-header{position:relative;margin:0 auto;height:100%; max-width:1200px;  }
@@ -78,7 +83,9 @@ url(../images/projects.jpg); }
 .container-1200{max-width:1200px; margin:0 auto; padding:20px 0 20px 0;}
 // Grid Styles
 .grid { position:relative; display: flex; flex-wrap: wrap; flex-direction:row ;list-style: none; margin: 0; padding: 0; }
-.cell { position:relative; flex:1;flex-direction: column; display:flex;}
+.cell { position:relative; flex:1;flex-direction: column; display:flex;
+@include small {text-align:center;}
+}
 .cell-row { display:flex; flex: 1; flex-direction: row; }
 /*--------- Generic styles ----------*/
 .grid--flexcells > .cell{display:flex;}

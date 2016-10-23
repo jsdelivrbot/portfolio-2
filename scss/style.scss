@@ -7,17 +7,17 @@
 @import 'partials/grid';
 @import 'partials/form';
 @import 'partials/projects';
-@import 'partials/modal';
+@import 'partials/tools';
 
 
 
 *, *::after, *::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html { font-size: 62.5%; }
-body { font-size: 1.2em; line-height: 1.8em; font: 400 'Montserrat', sans-serif #282828; 
+body { font-size: 1.4em; line-height: 1.8em; font: 400 'Montserrat', sans-serif #282828; 
  display: flex; min-height: 100vh; flex-direction: column;}
 // Headings
 h1, h2, h3, h4, h5, h6 { margin-top: 0rem; margin-bottom: 0rem;  }
-  h1 { font:700 6rem 'Syncopate', sans-serif;text-align:center; color:#fff; text-transform:uppercase;}
+  h1 { font:700 3rem 'Syncopate', sans-serif;text-align:center; color:#fff; text-transform:uppercase;}
   h2 { font:400 2.4rem 'Oswald', sans-serif; line-height:23px; text-align:center; text-transform: uppercase; margin:0 0 0 0; padding:0px 0 0 0;letter-spacing: 0.4rem; }
   h2 span {
   display: inline-block;
@@ -49,7 +49,7 @@ h2 span:after {
 h3{ font:700 2rem 'Raleway', sans-serif; line-height:20px; text-transform: uppercase; margin:10px 0 20px 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
 h4 {font:700 1.6rem  'Raleway', sans-serif; line-height:20px; text-transform: uppercase; margin: 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
 h5 {font:700 1.2rem  'Syncopate', sans-serif; line-height:20px; text-transform: uppercase; margin: 0; padding:0px 0 0 0;letter-spacing: 0.2rem;}
-p { margin-top: 0; padding:0px;}
+p { margin-top: 5px; padding:0px;}
 
 /* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a, a:visited {  text-decoration: none;}
@@ -87,7 +87,7 @@ a:hover, a:active {  text-decoration: none; ; }
 
 
 
-.footer{ width:100%; height:50px; background:#000; text-align:center; }
+.footer{ width:100%; height:50px; color:#fff; background:#000; text-align:center; }
 
 
 

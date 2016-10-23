@@ -4,9 +4,9 @@
 
 .btn {
   width: auto;
-  border: 1px solid #16a085;
+  border: 1px solid #30ceba;
   border-radius: 5px;
-  color: #16a085;
+  color: #30ceba;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -22,10 +22,10 @@
 .btn-contact {
   cursor: pointer;
   width: 100%;
-  border: 1px solid #16a085;
+  border: 1px solid #30ceba;
   border-radius: 5px;
   background: #fff;
-  color: #16a085;
+  color: #30ceba;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -73,16 +73,28 @@
   display: block; }
 
 .img-cell {
-  width: 25%;
+  width: 29%;
   height: auto;
   display: block; }
 
 .img-border {
   width: 100%;
-  border: 10px solid #fff;
-  border-radius: 5px;
   height: auto;
-  display: block; }
+  display: block;
+  border: 10px solid #fff;
+  border-radius: 5px; }
+
+.img-projects {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #DDD; }
+
+.spacer {
+  margin-top: 30px; }
+
+.float {
+  float: left; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -936,6 +948,11 @@ nav {
   margin: 0 auto;
   background: #eee; }
 
+.fullcontainer:nth-child(4) {
+  position: relative;
+  height: auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/contact2.jpg); }
+
 .fullcontainer:nth-child(5) {
   position: relative;
   height: auto;
@@ -944,17 +961,16 @@ nav {
 .fullcontainer:nth-child(6) {
   position: relative;
   height: auto;
-  background: linear-gradient(rgba(184, 196, 204, 0.95), rgba(184, 196, 204, 0.95)), url(../images/people.jpg); }
+  background: linear-gradient(rgba(184, 196, 204, 0.93), rgba(184, 196, 204, 0.93)), url(../images/people.jpg); }
 
 .fullcontainer:nth-child(7) {
   position: relative;
   height: auto;
-  background: linear-gradient(rgba(255, 255, 229, 0.95), rgba(255, 255, 229, 0.95)), url(../images/projects.jpg); }
+  background: linear-gradient(rgba(255, 255, 229, 0.9), rgba(255, 255, 229, 0.9)), url(../images/projects.jpg); }
 
 .fullcontainer:nth-child(8) {
   position: relative;
-  background: #fff;
-  color: #000; }
+  background: #fff; }
 
 .fullcontainer-absolute-header {
   z-index: 101;
@@ -1016,6 +1032,9 @@ nav {
   flex: 1;
   flex-direction: column;
   display: flex; }
+  @media only screen and (max-width: 767px) {
+    .cell {
+      text-align: center; } }
 
 .cell-row {
   display: flex;
@@ -1246,12 +1265,23 @@ textarea {
   text-align: left;
   padding: 40px; }
 
+.contact-thanks {
+  border: 1px solid #30ceba;
+  background: #0D6050;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
 .projects-text {
   width: 100%;
   min-height: 200px;
   text-align: center;
+  padding: 20px;
   background: #fff;
-  padding: 20px; }
+  border-top: 2px solid #ddd 80%;
+  margin-top: 5px; }
 
 .projects-button {
   width: 100%;
@@ -1262,111 +1292,13 @@ textarea {
   min-height: 200px;
   background: #f2f2f2; }
 
-/* 
+.icon-wrap {
+  display: flex;
+  margin-bottom: 20px; }
 
-The main content is inside of our <main> element.
-
-Make it fill the whole window and be scrollable - body should not scroll.
-
-*/
-.modal-content {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: scroll; }
-
-/*
-
-Modals should cover the whole screen, but be hidden by default.
-
-When we click a link to #ModalName, #ModalName becomes the :target element and we can use this selector to give it new styles, like display:block;
-
-Notice our "Close" links have an href of "#", which means none of our modals are now the :target. They will now all fall back to the basicl .modal styling.
-
-*/
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: none;
-  opacity: 0;
-  overflow: scroll; }
-
-.modal:target {
-  display: block;
-  z-index: 2;
-  opacity: 1; }
-
-.popup:target ~ .content {
-  overflow: hidden; }
-
-/* 	----------------------------
-		
-      Styling just for funsies. 
-      You can ignore this. 
-
-	-------------------------------	*/
-.modal-content {
-  background-color: #EDEBEE; }
-
-.modal-exit,
-.modal-exit:hover {
-  position: fixed;
-  top: 60px;
-  right: 20px;
-  width: 1em;
-  height: 1em;
-  z-index: 10;
-  padding: 0.3em;
-  font-size: 2em;
-  line-height: 1em;
-  text-decoration: none;
-  color: #FFF; }
-
-.modal-exit:hover {
-  background-color: rgba(255, 255, 255, 0.3); }
-
-.modal-open,
-.modal-open:hover {
-  display: block;
-  width: 10em;
-  margin: 1em auto;
-  padding: 2em 1em;
-  border: 1px solid #806973;
-  background-color: #FFF;
-  font-size: 2em;
-  text-align: center;
-  text-decoration: none;
-  color: #806973;
-  box-shadow: 0 0 10px 1px #CCC; }
-
-.modal-open:hover {
-  box-shadow: 0 0 10px 1px #999; }
-
-.modal-title {
-  font-size: 3em;
-  font-weight: 100; }
-
-.modal-description {
-  padding: 1em;
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
-  color: #EDEBEE; }
-
-.bg--purple {
-  background-color: #806973; }
-
-.bg--blue {
-  background-color: #696E80; }
-
-.bg--red {
-  background-color: #806969; }
-
-.bg--green {
-  background-color: #69807D; }
+.icon-initial {
+  margin-right: 20px;
+  color: #30ceba; }
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -1377,7 +1309,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.8em;
   font: 400 'Montserrat', sans-serif #282828;
   display: flex;
@@ -1389,7 +1321,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0rem; }
 
 h1 {
-  font: 700 6rem 'Syncopate', sans-serif;
+  font: 700 3rem 'Syncopate', sans-serif;
   text-align: center;
   color: #fff;
   text-transform: uppercase; }
@@ -1463,7 +1395,7 @@ h5 {
   letter-spacing: 0.2rem; }
 
 p {
-  margin-top: 0;
+  margin-top: 5px;
   padding: 0px; }
 
 /* Links ÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇô */
@@ -1508,6 +1440,7 @@ a:hover, a:active {
 .footer {
   width: 100%;
   height: 50px;
+  color: #fff;
   background: #000;
   text-align: center; }
 

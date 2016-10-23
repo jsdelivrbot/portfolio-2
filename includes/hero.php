@@ -1,13 +1,13 @@
 <div class="gridmd--hide gridlg--hide gridxl--hide">
 	<div class="grid">
-		<img src="images/fade-to-black.jpg" class="img-full">
+		<div class="cell"><img src="images/fade-to-black.jpg" class="img-full"></div>
 
 	<!-- Absolute text over video/image -->
 			<div class="fullcontainer-absolute-header">
 				<div class="container-absolute-header">
 					<div class="header-text"> 
 						<div class="grid grid--gutters grid--full gridmd--full gridlg--full gridxl--full">
-							<div class="cell grid--center"><h2>My Name's Tom</h2></div>
+							<div class="cell grid--center"><h1>My Name's Tom</h1></div>
 							<div class="cell grid--center">I am a full stack developer working with HTML, CSS, JS, PHP</div>
 							<div class="cell grid--center">
 								<div class="grid grid--gutters grid--1of2 gridmd-full gridlg-full gridxl-full">
@@ -42,7 +42,7 @@
 				<div class="container-absolute-header">
 					<div class="header-text"> 
 						<div class="grid grid--gutters grid--full gridmd--full gridlg--full gridxl--full">
-							<div class="cell grid--center"><h2>My Name's Tom</h2></div>
+							<div class="cell grid--center"><h1>My Name's Tom</h1></div>
 							<div class="cell grid--center">I am a full stack developer working with HTML, CCS, JS, PHP</div>
 							<div class="cell grid--center">
 								<div class="grid grid--gutters grid--full gridmd-full gridlg-full gridxl-full">
