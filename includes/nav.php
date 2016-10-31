@@ -1,4 +1,4 @@
-<header class="main_h sticky">
+<header class="main_h">
 
     <div class="row">
         <a class="logo" href="index.php"><img src="images/logo.png"></a>

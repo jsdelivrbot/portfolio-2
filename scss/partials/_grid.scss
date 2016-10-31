@@ -9,7 +9,7 @@
 .grid--1of2 > .cell { flex: 0 0 50%; }
 .grid--1of3 > .cell { flex: 0 0 33.3333%; }
 .grid--1of4 > .cell { flex: 0 0 25%; }
-.grid--gutters > .cell { padding: 5px; }
+.grid--gutters > .cell { padding: 10px; }
 .grid--gutterslg > .cell { padding: 10px; }
 }
 @include medium {

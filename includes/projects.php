@@ -5,8 +5,8 @@
 <div class="grid grid--gutters grid--flexcells grid--full gridmd--1of2 gridlg--1of4 gridxl--1of3">
 		<!-- Projeect 1 -->
 			<div class="cell" data-aos="fade-right">
-				<div class="grid  grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white">
-					<div class="cell">
+				<div class="grid grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white drop-shadow">
+					<div class="cell ">
 						<img src="images/layout01.png" class="img-full" alt="" >
 					</div>
 					<div class="cell">
@@ -25,7 +25,7 @@
 			<!-- Project 1 -->
 			<!-- Projeect 2 -->
 			<div class="cell" data-aos="zoom-in">
-				<div class="grid  grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white">
+				<div class="grid  grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white drop-shadow">
 					<div class="cell">
 						<img src="images/layout-02.png" class="img-full" alt="" >
 					</div>
@@ -45,7 +45,7 @@
 			<!-- Project 2 -->
 				<!-- Projeect 3 -->
 			<div class="cell" data-aos="fade-left">
-				<div class="grid  grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white">
+				<div class="grid  grid--flexcells grid--full gridmd--1of2 gridlg--1of2 gridxl--full white drop-shadow">
 					<div class="cell">
 						<img src="images/layout-03.jpg" class="img-full" alt="" >
 					</div>

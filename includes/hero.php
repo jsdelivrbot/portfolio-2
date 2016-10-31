@@ -50,7 +50,7 @@
 										<a href="https://github.com/thomas159" target="_blank"><div> <i class="fa fa-github-square icons-header" aria-hidden="true"></i></div></a>
 									</div>
 									<div class="cell">
-										<a href="https://www.linkedin.com/in/thomas-harrison-057a1129" target="_blank"><div><i class="fa fa-linkedin-square icons-header" aria-hidden="true"></i></div></a>
+										<a href="https://www.linkedin.com/in/tharrison159" target="_blank"><div><i class="fa fa-linkedin-square icons-header" aria-hidden="true"></i></div></a>
 									</div>
 								</div>
 							</div>

@@ -1,0 +1,7 @@
+full screen : title bar appearing white on load
+
+border or something around projects
+
+extra spacing between skills on mobile
+
+maybe try change animations 
