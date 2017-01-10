@@ -1,0 +1,38 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include includes/head.pug
+    body
+        .main
+            include includes/nav.pug
+            include includes/hero.pug
+            // About me container
+            .fullcontainer
+                .container
+                    include includes/aboutme.pug
+            // About me container
+            // Build Container
+            #sec01.fullcontainer
+                .container
+                    include includes/build.pug
+            // Tools
+            .fullcontainer
+                .container
+                    include includes/tools.pug
+                    include includes/skillicons.pug
+            // Projects container
+            #sec02.fullcontainer
+                .container
+                     include includes/projects.pug
+            // Contact container
+            #sec03.fullcontainer
+                .container
+                    include includes/contact.pug
+            // Contact container end
+        // main
+        footer.footer
+            .grid.grid--gutters.grid--full.gridmd--full.gridlg--full.gridxl--full
+            .cell.align--center
+                | All rights reserved Tom Harrison
+        // Footer ends here
+    include includes/scripts.pug

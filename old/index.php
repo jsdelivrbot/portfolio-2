@@ -21,7 +21,7 @@
 	</div>
 </div>
 <!-- Tools -->
-<div class="fullcontainer id="sec02"">
+<div class="fullcontainer" id="sec02">
 	<div class="container">
 		<?php require 'includes/tools.php' ?>
 	</div>

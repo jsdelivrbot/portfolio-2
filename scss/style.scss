@@ -33,7 +33,7 @@ h2 span:after {
   bottom: 0;
   width: 300px;
   color: #fff;
-  @include small {width:100px;  }
+  @include small {width:50px;  }
   @include medium {width:150px;  }
   @include large {width:200px;  }
 }

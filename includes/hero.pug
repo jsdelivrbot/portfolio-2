@@ -1,0 +1,55 @@
+//- includes/hero.pug
+.gridmd--hide.gridlg--hide.gridxl--hide
+    .grid
+        .cell
+            img.img-full(src='images/fade-to-black.jpg')
+        // Absolute text over video/image
+        .fullcontainer-absolute-header
+            .container-absolute-header
+                .header-text
+                    .grid.grid--gutters.grid--full.gridmd--full.gridlg--full.gridxl--full
+                        .cell.grid--center
+                            h1 My Name's Tom
+                        .cell.grid--center I am a full stack developer working with HTML, CSS, JS, PHP
+                        .cell.grid--center
+                            .grid.grid--gutters.grid--1of2.gridmd-full.gridlg-full.gridxl-full
+                                .cell
+                                    a(href='https://github.com/thomas159', target='_blank')
+                                        div
+                                            i.fa.fa-github-square.icons-header(aria-hidden='true')
+                                .cell
+                                    a(href='https://www.linkedin.com/in/thomas-harrison-057a1129', target='_blank')
+                                        div
+                                            i.fa.fa-linkedin-square.icons-header(aria-hidden='true')
+// Hero video/image
+.grid--hide
+    .homepage-hero-module
+        .video-container
+            .filter
+            video.fillWidth(autoplay='', loop='')
+                source(src='images/fade-to-black.mp4', type='video/mp4')
+                | Your browser does not support the video tag. I suggest you upgrade your browser.
+                source(src='images/fade-to-black.webm', type='video/webm')
+                | Your browser does not support the video tag. I suggest you upgrade your browser.
+            // Absolute text over video/image
+            .fullcontainer-absolute-header
+                .container-absolute-header
+                    .header-text
+                        .grid.grid--gutters.grid--full.gridmd--full.gridlg--full.gridxl--full
+                            .cell.grid--center
+                                h1 My Name's Tom
+                            .cell.grid--center I am a full stack developer working with HTML, CCS, JS, PHP
+                            .cell.grid--center
+                                .grid.grid--gutters.grid--full.gridmd-full.gridlg-full.gridxl-full
+                                    .cell
+                                        a(href='https://github.com/thomas159', target='_blank')
+                                            div
+                                                i.fa.fa-github-square.icons-header(aria-hidden='true')
+                                    .cell
+                                        a(href='https://www.linkedin.com/in/tharrison159', target='_blank')
+                                            div
+                                                i.fa.fa-linkedin-square.icons-header(aria-hidden='true')
+            .mouse
+                span
+            // Absolute text over video/image
+// Hero video/image

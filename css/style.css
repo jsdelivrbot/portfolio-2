@@ -662,13 +662,13 @@ nav {
 
   .skills:nth-child(8) {
     order: 8; } }
-@media (min-width: 768px) and (max-width: 999px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .skills {
     padding: 10px;
     min-height: auto;
     align-items: center;
     justify-content: center; } }
-@media (min-width: 1000px) and (max-width: 1499px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .skills {
     padding: 10px;
     min-height: auto;
@@ -840,7 +840,7 @@ nav {
 
   .grid--gutterslg > .cell {
     padding: 10px; } }
-@media only screen and (min-width: 768px) and (max-width: 999px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .gridmd--hide {
     display: none; }
 
@@ -869,7 +869,7 @@ nav {
 
   .grid--gutterslg > .cell {
     padding: 20px; } }
-@media only screen and (min-width: 1000px) and (max-width: 1499px) {
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .gridlg--hide {
     display: none; }
 
@@ -1280,13 +1280,13 @@ textarea {
   text-align: center;
   padding: 20px;
   background: #fff;
-  border-top: 2px solid #ddd 80%;
-  margin-top: 5px; }
+  border-top: 2px solid #ddd 80%; }
 
 .projects-button {
   width: 100%;
   height: auto;
-  padding: 20px; }
+  padding: 20px;
+  background: #fff; }
 
 .drop-shadow {
   box-shadow: 0px 0px 5px 0px rgba(85, 85, 85, 0.75); }
@@ -1356,11 +1356,11 @@ h2 span:after {
     h2 span:before,
     h2 span:after {
       width: 100px; } }
-  @media only screen and (min-width: 768px) and (max-width: 999px) {
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
     h2 span:before,
     h2 span:after {
       width: 150px; } }
-  @media only screen and (min-width: 1000px) and (max-width: 1499px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
     h2 span:before,
     h2 span:after {
       width: 200px; } }

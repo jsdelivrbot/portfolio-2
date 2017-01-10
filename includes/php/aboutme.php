@@ -1,4 +1,5 @@
-<article>
+
+			<article>
 	<h2><span>About Me</span></h2>
 </article>
 <div class="container-800">
