@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon/devicon.min.css">
 	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- JQUERY -->
